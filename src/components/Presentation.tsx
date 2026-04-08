@@ -7,10 +7,10 @@ import cafuSpeaker from "@/assets/cafu-speaker.png";
 import crowdEnergy from "@/assets/crowd-energy.png";
 import venueExterior from "@/assets/venue-exterior.png";
 import venueInterior from "@/assets/venue-interior.png";
-import superbetLogo from "@/assets/superbet-logo.png";
-import superbetActivation from "@/assets/superbet-activation.png";
+import cocacolaLogo from "@/assets/cocacola-logo.png";
+import cocacolaStand from "@/assets/cocacola-stand.png";
+import cocacolaShopping from "@/assets/cocacola-shopping.png";
 import foodDonation from "@/assets/food-donation.png";
-import shoppingPromo from "@/assets/shopping-promo.png";
 import podcastStage from "@/assets/podcast-stage.png";
 
 const slideVariants = {
@@ -35,7 +35,6 @@ const fadeLeft = {
   }),
 };
 
-// Reusable components
 const SlideNumber = ({ n, total }: { n: number; total: number }) => (
   <div className="absolute bottom-6 right-8 font-display text-sm tracking-widest text-muted-foreground">
     {String(n).padStart(2, "0")} / {String(total).padStart(2, "0")}
@@ -58,7 +57,7 @@ const BgImage = ({ src, opacity = "opacity-20" }: { src: string; opacity?: strin
 );
 
 const Logo = ({ className = "h-12" }: { className?: string }) => (
-  <img src={superbetLogo} alt="Superbet" className={`${className} object-contain`} />
+  <img src={cocacolaLogo} alt="Coca-Cola" className={`${className} object-contain`} />
 );
 
 const BulletList = ({ items }: { items: string[] }) => (
@@ -86,11 +85,11 @@ const slides = [
         </motion.div>
         <motion.p custom={1} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-sm uppercase tracking-[0.4em] text-primary">
-          Superbet Apresenta
+          Coca-Cola Apresenta
         </motion.p>
         <motion.h1 custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-4xl font-bold uppercase leading-tight tracking-wider text-foreground md:text-7xl">
-          Superbet Champions<br />
+          Coca-Cola Champions<br />
           <span className="text-primary">Experience</span>
         </motion.h1>
         <motion.div custom={3} variants={fadeUp} initial="hidden" animate="visible">
@@ -102,11 +101,11 @@ const slides = [
         </motion.h2>
         <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-base font-light uppercase tracking-wider text-foreground/70 md:text-lg">
-          Liderança, Superação e Mentalidade de Campeão
+          Conexão, Inspiração e a Energia de Quem Faz Acontecer
         </motion.p>
         <motion.p custom={5} variants={fadeUp} initial="hidden" animate="visible"
           className="max-w-2xl font-body text-sm leading-relaxed text-muted-foreground md:text-base">
-          Uma experiência exclusiva que conecta o universo do esporte de alto rendimento com os desafios da liderança, da disciplina e da construção de resultados extraordinários.
+          Uma experiência única que conecta o universo do esporte com aquilo que a Coca-Cola sempre representou: emoção, união, celebração e momentos inesquecíveis.
         </motion.p>
       </div>
     </div>
@@ -127,19 +126,19 @@ const slides = [
           <RedBar />
           <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
             className="font-body text-sm leading-relaxed text-foreground/80 md:text-base">
-            O Superbet Champions Experience é um evento de grande impacto que reunirá milhares de pessoas em Brasília para uma noite de inspiração, liderança e mentalidade vencedora com um dos maiores nomes da história do futebol mundial.
+            O Coca-Cola Champions Experience é um evento de grande impacto que reunirá milhares de pessoas em Brasília para uma noite marcada por inspiração, conexão humana e histórias que emocionam.
           </motion.p>
           <motion.p custom={3} variants={fadeUp} initial="hidden" animate="visible"
             className="font-body text-sm leading-relaxed text-foreground/80 md:text-base">
-            O protagonista da noite será <strong className="text-accent">Cafu</strong>, capitão da seleção brasileira campeã da Copa do Mundo de 2002 e referência global em liderança, disciplina e alta performance.
+            O protagonista será <strong className="text-accent">Cafu</strong>, capitão da Seleção Brasileira campeã do mundo em 2002, um símbolo de alegria, superação e trabalho em equipe — valores que se conectam diretamente com o espírito da Coca-Cola.
           </motion.p>
           <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
             className="font-body text-sm leading-relaxed text-foreground/80 md:text-base">
-            Mais do que uma palestra, o evento foi concebido como uma experiência completa de esporte, inspiração e entretenimento.
+            Mais do que uma palestra, o evento é uma experiência completa, pensada para gerar momentos compartilháveis, memoráveis e cheios de significado.
           </motion.p>
           <motion.p custom={5} variants={fadeUp} initial="hidden" animate="visible"
             className="font-body text-sm leading-relaxed text-foreground/70 md:text-base">
-            O projeto foi estruturado para permitir que a Superbet assuma o papel de <strong className="text-primary">Patrocinadora Master</strong> e proprietária da experiência.
+            A Coca-Cola assume o papel de <strong className="text-primary">Patrocinadora Master</strong> e protagonista da experiência, criando uma conexão genuína com o público.
           </motion.p>
         </div>
         <motion.div custom={2} variants={fadeLeft} initial="hidden" animate="visible"
@@ -166,7 +165,7 @@ const slides = [
         <RedBar />
         <motion.p custom={3} variants={fadeUp} initial="hidden" animate="visible"
           className="max-w-xl font-body text-base text-foreground/80">
-          Um dos maiores e mais modernos centros de eventos do Brasil.
+          Um dos maiores e mais modernos espaços do Brasil, preparado para receber:
         </motion.p>
         <motion.div custom={4} variants={fadeUp} initial="hidden" animate="visible" className="flex flex-col items-center gap-2">
           <span className="font-display text-5xl font-bold text-primary md:text-7xl">3.000</span>
@@ -195,7 +194,7 @@ const slides = [
         </motion.div>
         <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="max-w-lg font-body text-base text-foreground/70">
-          Uma noite especial dedicada ao esporte, inspiração e conexão com o público.
+          Uma noite criada para celebrar histórias, conexões e experiências inesquecíveis.
         </motion.p>
       </div>
     </div>
@@ -210,22 +209,18 @@ const slides = [
           className="font-display text-xs uppercase tracking-[0.3em] text-primary">Formato do Evento</motion.p>
         <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Uma Experiência Dinâmica
+          Uma Experiência<br /><span className="text-primary">Viva e Interativa</span>
         </motion.h2>
         <RedBar />
         <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="font-body text-base text-foreground/80">
-          O Superbet Champions Experience foi estruturado como uma experiência dinâmica que combina entretenimento, interação com o público e conteúdo inspirador.
+          O evento foi desenhado como uma jornada envolvente, onde o público não apenas assiste — vive a experiência Coca-Cola.
         </motion.p>
         <motion.p custom={3} variants={fadeUp} initial="hidden" animate="visible"
           className="font-body text-base text-foreground/80">
-          O evento contará com <strong className="text-accent">dois momentos principais</strong> com Cafu.
+          <strong className="text-accent">Dois grandes momentos</strong> com Cafu:
         </motion.p>
-        <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-base text-foreground/70">
-          A programação foi desenhada para criar uma experiência envolvente do início ao fim.
-        </motion.p>
-        <motion.div custom={5} variants={fadeUp} initial="hidden" animate="visible"
+        <motion.div custom={4} variants={fadeUp} initial="hidden" animate="visible"
           className="flex gap-6">
           <div className="flex flex-col items-center gap-3 rounded-xl border border-primary/30 bg-secondary/50 p-6">
             <span className="font-display text-2xl font-bold text-primary">1º</span>
@@ -257,26 +252,26 @@ const slides = [
           <RedBar />
           <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
             className="font-body text-sm text-foreground/80 md:text-base">
-            O evento se inicia com um podcast ao vivo com plateia. Um apresentador conduzirá uma conversa descontraída com Cafu abordando temas como:
+            Um bate-papo leve, inspirador e cheio de histórias reais. Temas:
           </motion.p>
           <BulletList items={[
-            "Bastidores da carreira",
-            "Histórias da Seleção Brasileira",
-            "Curiosidades do futebol profissional",
-            "Mentalidade de atleta de alto nível",
+            "Bastidores do futebol",
+            "Momentos marcantes da carreira",
+            "Espírito de equipe",
+            "A alegria de jogar e vencer",
           ]} />
           <motion.p custom={6} variants={fadeUp} initial="hidden" animate="visible"
             className="font-body text-sm text-foreground/80 md:text-base">
-            Durante esse momento também acontecerão:
+            Ativações:
           </motion.p>
           <BulletList items={[
-            "Interação com a plateia",
-            "Perguntas do público",
-            "Sorteios de brindes",
-            "Momentos de entretenimento",
+            "Interação com o público",
+            "Perguntas ao vivo",
+            "Dinâmicas e experiências",
+            "Distribuição de brindes Coca-Cola",
           ]} />
           <motion.p custom={10} variants={fadeUp} initial="hidden" animate="visible"
-            className="font-body text-xs italic text-muted-foreground">Duração aproximada: 1 hora</motion.p>
+            className="font-body text-xs italic text-muted-foreground">Duração: 1 hora</motion.p>
         </div>
         <motion.div custom={2} variants={fadeLeft} initial="hidden" animate="visible"
           className="hidden flex-1 items-center justify-center md:flex">
@@ -289,7 +284,7 @@ const slides = [
   // SLIDE 7 — INTERVALO
   () => (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
-      <BgImage src={superbetActivation} opacity="opacity-20" />
+      <BgImage src={cocacolaStand} opacity="opacity-20" />
       <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 text-center">
         <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible" className="flex items-center gap-3">
           <span className="rounded-full bg-accent px-4 py-1 font-display text-xs font-bold uppercase tracking-wider text-accent-foreground">20:00</span>
@@ -302,16 +297,17 @@ const slides = [
         <RedBar />
         <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="font-body text-base text-foreground/80">
-          Intervalo de aproximadamente 40 minutos. Nesse período o público poderá:
+          Um momento pensado para ativação intensa da marca Coca-Cola:
         </motion.p>
         <BulletList items={[
-          "Visitar ativações da Superbet",
-          "Interagir com patrocinadores",
-          "Participar de experiências promocionais",
-          "Conhecer espaços instagramáveis do evento",
+          "Espaços instagramáveis",
+          "Experiências sensoriais com produtos",
+          "Ativações interativas",
+          "Sampling de bebidas",
+          "Ambientes de convivência e conexão",
         ]} />
         <motion.div custom={7} variants={fadeUp} initial="hidden" animate="visible">
-          <img src={superbetActivation} alt="Ativação" className="mt-4 h-40 rounded-lg object-cover shadow-xl md:h-52" />
+          <img src={cocacolaStand} alt="Ativação Coca-Cola" className="mt-4 h-40 rounded-lg object-cover shadow-xl md:h-52" />
         </motion.div>
       </div>
     </div>
@@ -337,11 +333,11 @@ const slides = [
           <RedBar />
           <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
             className="font-body text-sm text-foreground/80 md:text-base">
-            Após o intervalo, Cafu retorna ao palco para a palestra principal da noite. Durante aproximadamente 1 hora, Cafu compartilhará sua trajetória desde o início da carreira até a conquista da Copa do Mundo de 2002 como capitão da Seleção Brasileira.
+            Uma jornada emocionante desde o início humilde até o topo do futebol mundial.
           </motion.p>
           <motion.p custom={3} variants={fadeUp} initial="hidden" animate="visible"
-            className="font-display text-sm uppercase tracking-wider text-primary">Temas abordados:</motion.p>
-          <BulletList items={["Liderança", "Mentalidade vencedora", "Disciplina", "Trabalho em equipe", "Superação de desafios"]} />
+            className="font-display text-sm uppercase tracking-wider text-primary">Temas:</motion.p>
+          <BulletList items={["Superação", "Trabalho em equipe", "Alegria no processo", "Construção de legado"]} />
         </div>
       </div>
     </div>
@@ -360,18 +356,14 @@ const slides = [
         <motion.div custom={1} variants={fadeUp} initial="hidden" animate="visible" className="flex gap-6">
           <div className="rounded-xl border border-border bg-secondary/60 p-5 text-center">
             <span className="block font-display text-xl font-bold text-primary">21:45</span>
-            <span className="font-body text-xs text-muted-foreground">Encerramento da Palestra</span>
+            <span className="font-body text-xs text-muted-foreground">Encerramento</span>
           </div>
           <div className="rounded-xl border border-accent/30 bg-secondary/60 p-5 text-center">
             <span className="block font-display text-xl font-bold text-accent">22:00</span>
-            <span className="font-body text-xs text-muted-foreground">Meet & Greet Experience</span>
+            <span className="font-body text-xs text-muted-foreground">Experiência exclusiva</span>
           </div>
         </motion.div>
-        <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-base text-foreground/80">
-          Após o evento haverá um momento especial de interação com Cafu.
-        </motion.p>
-        <BulletList items={["Sessão de fotos", "Autógrafos", "Interação com convidados", "Networking entre participantes"]} />
+        <BulletList items={["Fotos com Cafu", "Autógrafos", "Networking", "Momentos únicos e memoráveis"]} />
       </div>
     </div>
   ),
@@ -385,25 +377,23 @@ const slides = [
           className="font-display text-xs uppercase tracking-[0.3em] text-primary">Perfil do Público</motion.p>
         <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Público Altamente<br /><span className="text-primary">Engajado</span>
+          Altamente Conectado<br /><span className="text-primary">e Experiencial</span>
         </motion.h2>
         <RedBar />
-        <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-base text-foreground/80">
-          O evento reunirá um público altamente conectado com o universo do esporte e das apostas esportivas.
-        </motion.p>
         <motion.div custom={3} variants={fadeUp} initial="hidden" animate="visible"
-          className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-5">
-          {["Fãs de futebol e esportes", "Apostadores esportivos", "Usuários de plataformas de apostas online",
-            "Traders esportivos e analistas", "Criadores de conteúdo esportivo", "Influenciadores digitais",
-            "Profissionais do mercado digital", "Jovens profissionais e universitários", "Empreendedores e profissionais liberais",
-            "Executivos e empresários"].map((item, i) => (
+          className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+          {["Jovens adultos", "Universitários", "Profissionais e empreendedores",
+            "Fãs de esporte", "Criadores de conteúdo", "Público digital e social"].map((item, i) => (
               <motion.div key={i} custom={i + 3} variants={fadeUp} initial="hidden" animate="visible"
                 className="rounded-lg border border-border bg-secondary/60 p-3 text-center">
                 <span className="font-body text-xs text-foreground/80">{item}</span>
               </motion.div>
             ))}
         </motion.div>
+        <motion.p custom={10} variants={fadeUp} initial="hidden" animate="visible"
+          className="font-body text-sm italic text-foreground/70">
+          Um público que valoriza experiências, conexão e propósito.
+        </motion.p>
       </div>
     </div>
   ),
@@ -411,22 +401,18 @@ const slides = [
   // SLIDE 11 — EXPERIÊNCIA DE MARCA
   () => (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
-      <BgImage src={superbetActivation} opacity="opacity-15" />
+      <BgImage src={cocacolaStand} opacity="opacity-15" />
       <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 text-center">
         <motion.p custom={0} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-xs uppercase tracking-[0.3em] text-primary">Experiência de Marca</motion.p>
+          className="font-display text-xs uppercase tracking-[0.3em] text-primary">Experiência de Marca Coca-Cola</motion.p>
         <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Presença<br /><span className="text-primary">Dominante</span>
+          Presença Emocional<br /><span className="text-primary">e Marcante</span>
         </motion.h2>
         <GoldBar />
         <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="font-body text-base text-foreground/80">
-          Ao assumir o papel de Patrocinadora Master, a Superbet terá presença dominante em toda a experiência do evento.
-        </motion.p>
-        <motion.p custom={3} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-base text-foreground/70">
-          A marca estará presente em todos os pontos de contato com o público.
+          A Coca-Cola estará presente em todos os momentos-chave, criando uma experiência integrada e memorável.
         </motion.p>
         <motion.div custom={4} variants={fadeUp} initial="hidden" animate="visible">
           <Logo className="h-20" />
@@ -438,31 +424,35 @@ const slides = [
   // SLIDE 12 — ATIVAÇÃO CENTRAL
   () => (
     <div className="relative flex h-full w-full overflow-hidden">
-      <BgImage src={superbetActivation} opacity="opacity-20" />
+      <BgImage src={cocacolaStand} opacity="opacity-20" />
       <div className="relative z-10 flex h-full w-full flex-col justify-center gap-6 px-10 md:flex-row md:items-center md:gap-12 md:px-20">
         <div className="flex flex-1 flex-col gap-5">
           <motion.p custom={0} variants={fadeUp} initial="hidden" animate="visible"
             className="font-display text-xs uppercase tracking-[0.3em] text-primary">Ativação Central da Marca</motion.p>
           <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
             className="font-display text-3xl font-bold uppercase text-foreground md:text-4xl">
-            Ilha Oficial<br /><span className="text-primary">Superbet</span>
+            Espaço<br /><span className="text-primary">Coca-Cola Experience</span>
           </motion.h2>
           <RedBar />
           <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
             className="font-body text-sm text-foreground/80 md:text-base">
-            Logo na entrada do evento será instalada uma ilha oficial da Superbet. Um estande de grande impacto visual em área estratégica.
+            Logo na entrada:
           </motion.p>
           <BulletList items={[
-            "Apresentar sua plataforma",
-            "Cadastrar novos usuários",
-            "Realizar ativações promocionais",
-            "Distribuir brindes exclusivos",
-            "Interagir diretamente com o público",
+            "Degustação de produtos",
+            "Ativações sensoriais",
+            "Espaços de convivência",
+            "Interação com o público",
+            "Distribuição de brindes exclusivos",
           ]} />
+          <motion.p custom={8} variants={fadeUp} initial="hidden" animate="visible"
+            className="font-body text-sm italic text-foreground/70 md:text-base">
+            Um ambiente pensado para gerar experiência, compartilhamento e conexão emocional.
+          </motion.p>
         </div>
         <motion.div custom={3} variants={fadeLeft} initial="hidden" animate="visible"
           className="hidden flex-1 items-center justify-center md:flex">
-          <img src={superbetActivation} alt="Ativação" className="max-h-[60%] rounded-lg object-cover shadow-2xl" style={{ boxShadow: "var(--shadow-glow)" }} />
+          <img src={cocacolaStand} alt="Ativação Coca-Cola" className="max-h-[60%] rounded-lg object-cover shadow-2xl" style={{ boxShadow: "var(--shadow-glow)" }} />
         </motion.div>
       </div>
     </div>
@@ -473,7 +463,7 @@ const slides = [
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
       <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 text-center">
         <motion.p custom={0} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-xs uppercase tracking-[0.3em] text-primary">Branding em Todo o Evento</motion.p>
+          className="font-display text-xs uppercase tracking-[0.3em] text-primary">Branding no Evento</motion.p>
         <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
           Presença<br /><span className="text-accent">Total</span>
@@ -481,11 +471,11 @@ const slides = [
         <RedBar />
         <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="font-body text-base text-foreground/80">
-          A presença da marca será total durante toda a experiência. Incluindo:
+          A marca Coca-Cola integrada de forma natural e envolvente.
         </motion.p>
         <motion.div custom={3} variants={fadeUp} initial="hidden" animate="visible"
           className="grid grid-cols-2 gap-4 md:grid-cols-3">
-          {["Palco principal", "Telões do evento", "Backdrop oficial", "Credenciais", "Sinalização interna", "Cenografia do evento", "Materiais promocionais"].map((item, i) => (
+          {["Palco principal", "Telões", "Cenografia", "Credenciais", "Espaços interativos", "Materiais promocionais"].map((item, i) => (
             <div key={i} className="flex items-center gap-2 rounded-lg border border-primary/20 bg-secondary/60 px-4 py-3">
               <span className="h-2 w-2 rounded-full bg-primary" />
               <span className="font-body text-sm text-foreground/80">{item}</span>
@@ -496,31 +486,27 @@ const slides = [
     </div>
   ),
 
-  // SLIDE 14 — SORTEIOS
+  // SLIDE 14 — EXPERIÊNCIAS & SORTEIOS
   () => (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
       <BgImage src={cafuTrophy} opacity="opacity-10" />
       <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 text-center">
         <motion.p custom={0} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-xs uppercase tracking-[0.3em] text-accent">Sorteios e Experiências</motion.p>
+          className="font-display text-xs uppercase tracking-[0.3em] text-accent">Experiências & Sorteios</motion.p>
         <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Sorteios<br /><span className="text-primary">Especiais</span>
+          Experiências<br /><span className="text-primary">Especiais</span>
         </motion.h2>
         <GoldBar />
         <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="font-body text-base text-foreground/80">
-          Durante o evento serão realizados sorteios especiais para o público. Entre os prêmios possíveis:
+          Durante o evento:
         </motion.p>
         <BulletList items={[
-          "Chuteiras Adidas",
-          "Camisas da Seleção Brasileira de 2002",
-          "Itens colecionáveis do futebol",
+          "Kits exclusivos Coca-Cola",
+          "Produtos personalizados",
+          "Experiências especiais com o público",
         ]} />
-        <motion.p custom={6} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-sm italic text-foreground/70">
-          Também poderá ser exibida uma camisa histórica da conquista da Copa do Mundo de 2002, levantada pelo capitão Cafu.
-        </motion.p>
       </div>
     </div>
   ),
@@ -533,22 +519,18 @@ const slides = [
           className="font-display text-xs uppercase tracking-[0.3em] text-primary">Plano de Divulgação</motion.p>
         <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Mídia<br /><span className="text-primary">Exterior</span>
+          Campanha<br /><span className="text-primary">360°</span>
         </motion.h2>
         <RedBar />
-        <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-base text-foreground/80">
-          O evento contará com uma forte campanha de divulgação em toda a cidade de Brasília. Entre as ações previstas:
-        </motion.p>
-        <BulletList items={["Outdoors espalhados pela cidade", "Banners em grandes avenidas", "Painéis urbanos"]} />
+        <BulletList items={["Outdoors", "Painéis urbanos", "Shoppings", "Materiais promocionais", "Mídia digital", "Redes sociais"]} />
       </div>
     </div>
   ),
 
-  // SLIDE 16 — SHOPPING
+  // SLIDE 16 — SHOPPING (with Coca-Cola shopping image)
   () => (
     <div className="relative flex h-full w-full overflow-hidden">
-      <BgImage src={shoppingPromo} opacity="opacity-20" />
+      <BgImage src={cocacolaShopping} opacity="opacity-20" />
       <div className="relative z-10 flex h-full w-full flex-col justify-center gap-6 px-10 md:flex-row md:items-center md:gap-12 md:px-20">
         <div className="flex flex-1 flex-col gap-5">
           <motion.p custom={0} variants={fadeUp} initial="hidden" animate="visible"
@@ -566,92 +548,33 @@ const slides = [
         </div>
         <motion.div custom={3} variants={fadeLeft} initial="hidden" animate="visible"
           className="hidden flex-1 items-center justify-center md:flex">
-          <img src={shoppingPromo} alt="Shopping" className="max-h-[60%] rounded-lg object-cover shadow-2xl" />
+          <img src={cocacolaShopping} alt="Shopping Coca-Cola" className="max-h-[60%] rounded-lg object-cover shadow-2xl" />
         </motion.div>
       </div>
     </div>
   ),
 
-  // SLIDE 17 — MATERIAL PROMOCIONAL
+  // SLIDE 17 — COBERTURA DE MÍDIA
   () => (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
       <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 text-center">
         <motion.p custom={0} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-xs uppercase tracking-[0.3em] text-primary">Divulgação</motion.p>
+          className="font-display text-xs uppercase tracking-[0.3em] text-primary">Cobertura de Mídia</motion.p>
         <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Material<br /><span className="text-primary">Promocional</span>
+          Rádio, Imprensa<br /><span className="text-accent">& TV</span>
         </motion.h2>
         <RedBar />
-        <BulletList items={["Distribuição de flyers", "Materiais promocionais físicos", "Divulgação em locais estratégicos"]} />
-      </div>
-    </div>
-  ),
-
-  // SLIDE 18 — MÍDIA PAGA
-  () => (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
-      <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 text-center">
-        <motion.p custom={0} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-xs uppercase tracking-[0.3em] text-accent">Mídia Digital</motion.p>
-        <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Mídia<br /><span className="text-primary">Paga</span>
-        </motion.h2>
-        <RedBar />
-        <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-base text-foreground/80">
-          Campanha de mídia paga em larga escala. Incluindo:
-        </motion.p>
-        <BulletList items={["Anúncios nas redes sociais", "Campanhas digitais", "Mídia segmentada para fãs de esporte e apostas"]} />
-      </div>
-    </div>
-  ),
-
-  // SLIDE 19 — RÁDIO E IMPRENSA
-  () => (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
-      <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 text-center">
-        <motion.p custom={0} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-xs uppercase tracking-[0.3em] text-primary">Cobertura</motion.p>
-        <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Rádio &<br /><span className="text-accent">Imprensa</span>
-        </motion.h2>
-        <RedBar />
-        <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-base text-foreground/80">
-          O evento contará com divulgação em:
-        </motion.p>
-        <BulletList items={["Emissoras de rádio", "Portais de notícias", "Veículos de imprensa"]} />
-      </div>
-    </div>
-  ),
-
-  // SLIDE 20 — TV
-  () => (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
-      <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 text-center">
-        <motion.p custom={0} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-xs uppercase tracking-[0.3em] text-primary">Televisão</motion.p>
-        <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Cobertura<br /><span className="text-primary">Record</span>
-        </motion.h2>
-        <GoldBar />
-        <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-base text-foreground/80">
-          O evento contará com cobertura da emissora Record.
-        </motion.p>
-        <motion.p custom={3} variants={fadeUp} initial="hidden" animate="visible"
+        <BulletList items={["Rádio", "Portais", "Imprensa", "TV (Record)"]} />
+        <motion.p custom={6} variants={fadeUp} initial="hidden" animate="visible"
           className="font-body text-base text-foreground/70">
-          Ampliando significativamente o alcance e visibilidade do projeto.
+          Ampliação massiva de alcance e visibilidade.
         </motion.p>
       </div>
     </div>
   ),
 
-  // SLIDE 21 — IMPACTO SOCIAL
+  // SLIDE 18 — IMPACTO SOCIAL
   () => (
     <div className="relative flex h-full w-full overflow-hidden">
       <BgImage src={foodDonation} opacity="opacity-20" />
@@ -660,41 +583,37 @@ const slides = [
           className="font-display text-xs uppercase tracking-[0.3em] text-brand-green">Impacto Social</motion.p>
         <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Compromisso<br /><span className="text-brand-green">Social</span>
+          Compartilhar<br /><span className="text-brand-green">Faz Parte</span>
         </motion.h2>
         <RedBar />
         <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="max-w-xl font-body text-base text-foreground/80">
-          O evento também terá caráter social. A entrada será realizada mediante a doação de 1kg de alimento não perecível.
+          Entrada mediante doação de 1kg de alimento não perecível.
         </motion.p>
         <motion.div custom={3} variants={fadeUp} initial="hidden" animate="visible"
           className="flex flex-col items-center gap-2 rounded-2xl border border-brand-green/30 bg-secondary/50 px-12 py-8">
           <span className="font-display text-5xl font-bold text-brand-green md:text-7xl">3</span>
           <span className="font-display text-2xl uppercase tracking-widest text-accent">Toneladas</span>
-          <span className="font-body text-sm text-muted-foreground">Meta de arrecadação de alimentos</span>
+          <span className="font-body text-sm text-muted-foreground">Meta de arrecadação</span>
         </motion.div>
       </div>
     </div>
   ),
 
-  // SLIDE 22 — DESTINAÇÃO
+  // SLIDE 19 — DESTINAÇÃO
   () => (
     <div className="relative flex h-full w-full overflow-hidden">
       <BgImage src={foodDonation} opacity="opacity-15" />
       <div className="relative z-10 flex h-full w-full flex-col justify-center gap-6 px-10 md:flex-row md:items-center md:gap-12 md:px-20">
         <div className="flex flex-1 flex-col gap-5">
           <motion.p custom={0} variants={fadeUp} initial="hidden" animate="visible"
-            className="font-display text-xs uppercase tracking-[0.3em] text-brand-green">Destinação dos Alimentos</motion.p>
+            className="font-display text-xs uppercase tracking-[0.3em] text-brand-green">Destinação</motion.p>
           <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
             className="font-display text-3xl font-bold uppercase text-foreground md:text-4xl">
             Para Quem<br /><span className="text-brand-green">Mais Precisa</span>
           </motion.h2>
           <RedBar />
-          <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
-            className="font-body text-sm text-foreground/80 md:text-base">
-            Os alimentos arrecadados serão destinados a:
-          </motion.p>
-          <BulletList items={["Famílias em situação de vulnerabilidade", "Instituições sociais", "Projetos comunitários"]} />
+          <BulletList items={["Famílias em vulnerabilidade", "Instituições sociais", "Projetos comunitários"]} />
         </div>
         <motion.div custom={3} variants={fadeLeft} initial="hidden" animate="visible"
           className="hidden flex-1 items-center justify-center md:flex">
@@ -704,7 +623,7 @@ const slides = [
     </div>
   ),
 
-  // SLIDE 23 — PARTICIPAÇÃO SOCIAL SUPERBET
+  // SLIDE 20 — PARTICIPAÇÃO SOCIAL COCA-COLA
   () => (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
       <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 text-center">
@@ -712,22 +631,25 @@ const slides = [
           <Logo className="h-14" />
         </motion.div>
         <motion.p custom={1} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-xs uppercase tracking-[0.3em] text-brand-green">Participação Social da Superbet</motion.p>
+          className="font-display text-xs uppercase tracking-[0.3em] text-brand-green">Participação Social Coca-Cola</motion.p>
         <motion.h2 custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
-          Ação Social<br /><span className="text-primary">Superbet</span>
+          Ação Social<br /><span className="text-primary">Coca-Cola</span>
         </motion.h2>
         <RedBar />
         <motion.p custom={3} variants={fadeUp} initial="hidden" animate="visible"
           className="font-body text-base text-foreground/80">
-          Como patrocinadora master do evento, a Superbet também poderá participar diretamente da ação social. Após o evento será realizada uma entrega oficial dos alimentos arrecadados com presença de:
+          A marca poderá liderar a entrega oficial dos alimentos, reforçando seu posicionamento de:
         </motion.p>
-        <BulletList items={["Representantes da Superbet", "Organizadores", "Instituições beneficiadas", "Imprensa"]} />
+        <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
+          className="font-display text-lg italic text-accent">
+          marca que conecta, transforma e impacta positivamente a sociedade
+        </motion.p>
       </div>
     </div>
   ),
 
-  // SLIDE 24 — IMPACTO ESTIMADO
+  // SLIDE 21 — IMPACTO ESTIMADO
   () => (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
       <BgImage src={crowdEnergy} opacity="opacity-15" />
@@ -744,7 +666,7 @@ const slides = [
           {[
             { num: "3.000", label: "Participantes Presenciais" },
             { num: "1-3M", label: "Impactos Digitais" },
-            { num: "TV", label: "Cobertura de Televisão" },
+            { num: "TV", label: "Cobertura em TV" },
             { num: "360°", label: "Campanha Urbana" },
           ].map((stat, i) => (
             <motion.div key={i} custom={i + 3} variants={fadeUp} initial="hidden" animate="visible"
@@ -759,7 +681,7 @@ const slides = [
     </div>
   ),
 
-  // SLIDE 25 — COTA MASTER
+  // SLIDE 22 — COTA MASTER
   () => (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
       <BgImage src={cafuTrophy} opacity="opacity-10" />
@@ -769,7 +691,7 @@ const slides = [
           <Logo className="h-16" />
         </motion.div>
         <motion.p custom={1} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-sm uppercase tracking-[0.4em] text-primary">Superbet Apresenta</motion.p>
+          className="font-display text-sm uppercase tracking-[0.4em] text-primary">Coca-Cola Apresenta</motion.p>
         <motion.h2 custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
           Cota <span className="text-accent">Master</span>
@@ -777,13 +699,13 @@ const slides = [
         <RedBar />
         <motion.div custom={3} variants={fadeUp} initial="hidden" animate="visible"
           className="rounded-2xl border border-primary/40 bg-secondary/60 px-12 py-8" style={{ boxShadow: "var(--shadow-glow)" }}>
-          <span className="font-display text-5xl font-bold text-primary md:text-7xl">R$ 800.000</span>
+          <span className="font-display text-5xl font-bold text-primary md:text-7xl">R$ 900.000</span>
         </motion.div>
         <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-sm uppercase tracking-wider text-muted-foreground">Investimento da Cota Master</motion.p>
         <motion.div custom={5} variants={fadeUp} initial="hidden" animate="visible"
           className="grid grid-cols-2 gap-3 md:grid-cols-3">
-          {["Naming rights do evento", "Exposição total da marca", "Ativações exclusivas", "Presença em toda campanha de mídia", "Participação nas ações sociais", "Associação direta com Cafu"].map((item, i) => (
+          {["Naming rights do evento", "Presença total da marca", "Ativações exclusivas", "Integração completa na comunicação", "Associação direta com Cafu", "Participação nas ações sociais"].map((item, i) => (
             <div key={i} className="flex items-center gap-2 rounded-lg border border-primary/20 bg-secondary/40 px-3 py-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
               <span className="font-body text-xs text-foreground/80">{item}</span>
@@ -794,7 +716,7 @@ const slides = [
     </div>
   ),
 
-  // SLIDE 26 — POSICIONAMENTO FINAL
+  // SLIDE 23 — POSICIONAMENTO FINAL
   () => (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
       <BgImage src={cafuTrophy} opacity="opacity-20" />
@@ -810,24 +732,20 @@ const slides = [
         <GoldBar />
         <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="font-body text-lg text-foreground/80">
-          Este projeto não é apenas um evento.
+          O Coca-Cola Champions Experience é uma plataforma de:
         </motion.p>
-        <motion.p custom={3} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-base text-foreground/80">
-          Ele foi estruturado como uma <strong className="text-accent">plataforma completa</strong> de branding, entretenimento, esporte e impacto social.
-        </motion.p>
-        <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-body text-base text-foreground/70">
-          Uma experiência capaz de gerar visibilidade, conexão emocional com o público e grande repercussão.
-        </motion.p>
-        <motion.div custom={5} variants={fadeUp} initial="hidden" animate="visible"
-          className="mt-4 flex gap-3">
-          {["Branding", "Entretenimento", "Esporte", "Impacto Social"].map((p) => (
+        <motion.div custom={3} variants={fadeUp} initial="hidden" animate="visible"
+          className="flex flex-wrap justify-center gap-3">
+          {["Branding emocional", "Experiência de marca", "Entretenimento", "Esporte", "Impacto social"].map((p) => (
             <span key={p} className="rounded-full border border-primary/30 bg-primary/10 px-4 py-1 font-display text-xs uppercase tracking-wider text-primary">
               {p}
             </span>
           ))}
         </motion.div>
+        <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
+          className="font-body text-base text-foreground/70">
+          Uma oportunidade de criar momentos que conectam pessoas — exatamente como Coca-Cola faz há gerações.
+        </motion.p>
       </div>
     </div>
   ),
