@@ -189,8 +189,8 @@ const slides = [
         <motion.div custom={1} variants={fadeUp} initial="hidden" animate="visible"
           className="flex flex-col items-center gap-2 rounded-2xl border border-primary/30 bg-secondary/50 px-16 py-10"
           style={{ boxShadow: "var(--shadow-glow)" }}>
-          <span className="font-display text-7xl font-bold text-primary md:text-9xl">18</span>
-          <span className="font-display text-2xl uppercase tracking-widest text-accent md:text-4xl">Maio</span>
+          <span className="font-display text-7xl font-bold text-primary md:text-9xl">4</span>
+          <span className="font-display text-2xl uppercase tracking-widest text-accent md:text-4xl">Setembro</span>
         </motion.div>
         <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
           className="max-w-lg font-body text-base text-foreground/70">
