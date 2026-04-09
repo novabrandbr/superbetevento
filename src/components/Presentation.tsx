@@ -8,6 +8,7 @@ import crowdEnergy from "@/assets/crowd-energy.png";
 import venueExterior from "@/assets/venue-exterior.png";
 import venueInterior from "@/assets/venue-interior.png";
 import cocacolaLogo from "@/assets/cocacola-logo.png";
+import kallaLogo from "@/assets/kalla-logo.png";
 import cocacolaStand from "@/assets/cocacola-stand.png";
 import cocacolaShopping from "@/assets/cocacola-shopping.png";
 import foodDonation from "@/assets/food-donation.png";
@@ -746,6 +747,37 @@ const slides = [
           className="font-body text-base text-foreground/70">
           Uma oportunidade de criar momentos que conectam pessoas — exatamente como Coca-Cola faz há gerações.
         </motion.p>
+      </div>
+    </div>
+  ),
+
+  // SLIDE 24 — KALLA DIGITAL
+  () => (
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden px-10">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
+      <div className="relative z-10 flex max-w-3xl flex-col items-center gap-8 text-center">
+        <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible">
+          <img src={kallaLogo} alt="Kalla Digital" className="h-28 object-contain md:h-36" />
+        </motion.div>
+        <motion.h2 custom={1} variants={fadeUp} initial="hidden" animate="visible"
+          className="font-display text-3xl font-bold uppercase text-foreground md:text-5xl">
+          Kalla <span className="text-primary">Digital</span>
+        </motion.h2>
+        <GoldBar />
+        <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
+          className="font-display text-sm uppercase tracking-[0.3em] text-muted-foreground">
+          CNPJ 34.316.145/0001-18
+        </motion.p>
+        <motion.p custom={3} variants={fadeUp} initial="hidden" animate="visible"
+          className="max-w-xl font-body text-base text-foreground/70">
+          Produção e realização do evento.
+        </motion.p>
+        <motion.div custom={4} variants={fadeUp} initial="hidden" animate="visible"
+          className="mt-4 flex items-center gap-4">
+          <Logo className="h-10" />
+          <span className="font-display text-lg text-muted-foreground">×</span>
+          <img src={kallaLogo} alt="Kalla Digital" className="h-10 object-contain" />
+        </motion.div>
       </div>
     </div>
   ),
