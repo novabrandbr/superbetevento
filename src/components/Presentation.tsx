@@ -768,10 +768,16 @@ const slides = [
         </motion.div>
         <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-sm uppercase tracking-wider text-muted-foreground">Investimento da Cota Master</motion.p>
-        <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
-          className="max-w-3xl font-display text-2xl font-bold uppercase tracking-wide text-accent md:text-4xl">
-          Valor pode ser ajustável conforme estratégia alinhada!
-        </motion.p>
+        <motion.div custom={4} variants={fadeUp} initial="hidden" animate="visible"
+          className="mt-2 max-w-3xl rounded-2xl border border-accent/40 bg-accent/10 px-8 py-5"
+          style={{ boxShadow: "var(--shadow-glow)" }}>
+          <p className="font-display text-xl font-bold uppercase tracking-wide text-accent md:text-3xl">
+            Valores abertos a negociação
+          </p>
+          <p className="mt-2 font-body text-sm text-foreground/80 md:text-base">
+            dependendo de estratégia montada e traçada pelo time de marketing da Coca-Cola.
+          </p>
+        </motion.div>
         <motion.div custom={5} variants={fadeUp} initial="hidden" animate="visible"
           className="grid grid-cols-2 gap-3 md:grid-cols-3">
           {["Naming rights do evento", "Presença total da marca", "Ativações exclusivas", "Integração completa na comunicação", "Associação direta com Cafu", "Participação nas ações sociais"].map((item, i) => (
