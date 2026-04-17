@@ -704,6 +704,10 @@ const slides = [
         </motion.div>
         <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
           className="font-display text-sm uppercase tracking-wider text-muted-foreground">Investimento da Cota Master</motion.p>
+        <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
+          className="max-w-3xl font-display text-2xl font-bold uppercase tracking-wide text-accent md:text-4xl">
+          Valor pode ser ajustável conforme estratégia alinhada!
+        </motion.p>
         <motion.div custom={5} variants={fadeUp} initial="hidden" animate="visible"
           className="grid grid-cols-2 gap-3 md:grid-cols-3">
           {["Naming rights do evento", "Presença total da marca", "Ativações exclusivas", "Integração completa na comunicação", "Associação direta com Cafu", "Participação nas ações sociais"].map((item, i) => (
@@ -772,6 +776,16 @@ const slides = [
           className="max-w-xl font-body text-base text-foreground/70">
           Produção e realização do evento.
         </motion.p>
+        <motion.div custom={3.5} variants={fadeUp} initial="hidden" animate="visible"
+          className="mt-2 rounded-2xl border border-accent/40 bg-accent/10 px-10 py-6"
+          style={{ boxShadow: "var(--shadow-glow)" }}>
+          <p className="font-display text-xs uppercase tracking-[0.3em] text-muted-foreground">
+            Aos cuidados de
+          </p>
+          <p className="mt-2 font-display text-5xl font-bold uppercase tracking-wide text-primary md:text-7xl">
+            Keillis
+          </p>
+        </motion.div>
         <motion.div custom={4} variants={fadeUp} initial="hidden" animate="visible"
           className="mt-4 flex items-center gap-4">
           <Logo className="h-10" />
