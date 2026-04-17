@@ -121,39 +121,57 @@ const BulletList = ({ items }: { items: string[] }) => (
 
 // All 26 slides
 const slides = [
-  // SLIDE 1 — CAPA
+  // SLIDE 1 — CAPA (with confetti celebration)
   () => (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden">
-      <BgImage src={cafuTrophy} opacity="opacity-30" />
-      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
-      <div className="relative z-10 flex flex-col items-center gap-6 px-8 text-center">
-        <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible">
-          <Logo className="h-16 md:h-20" />
+    <div className="relative flex h-full w-full items-center justify-center overflow-hidden">
+      <BgImage src={cafuTrophyRaised} opacity="opacity-25" />
+      <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
+      <Confetti />
+      <div className="relative z-30 flex h-full w-full flex-col items-center justify-center gap-6 px-8 md:flex-row md:items-center md:gap-12 md:px-20">
+        {/* Cafu image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, x: -40 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="hidden flex-shrink-0 md:block"
+        >
+          <img
+            src={cafuCelebration}
+            alt="Cafu celebrando com a taça"
+            className="h-[70vh] max-h-[600px] rounded-2xl object-cover shadow-2xl"
+            style={{ boxShadow: "var(--shadow-glow)" }}
+          />
         </motion.div>
-        <motion.p custom={1} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-sm uppercase tracking-[0.4em] text-primary">
-          Coca-Cola Apresenta
-        </motion.p>
-        <motion.h1 custom={2} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-4xl font-bold uppercase leading-tight tracking-wider text-foreground md:text-7xl">
-          Coca-Cola Champions<br />
-          <span className="text-primary">Experience</span>
-        </motion.h1>
-        <motion.div custom={3} variants={fadeUp} initial="hidden" animate="visible">
-          <GoldBar />
-        </motion.div>
-        <motion.h2 custom={3} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-xl font-light uppercase tracking-widest text-accent md:text-3xl">
-          Uma Noite com Cafu
-        </motion.h2>
-        <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
-          className="font-display text-base font-light uppercase tracking-wider text-foreground/70 md:text-lg">
-          Conexão, Inspiração e a Energia de Quem Faz Acontecer
-        </motion.p>
-        <motion.p custom={5} variants={fadeUp} initial="hidden" animate="visible"
-          className="max-w-2xl font-body text-sm leading-relaxed text-muted-foreground md:text-base">
-          Uma experiência única que conecta o universo do esporte com aquilo que a Coca-Cola sempre representou: emoção, união, celebração e momentos inesquecíveis.
-        </motion.p>
+
+        <div className="flex flex-col items-center gap-5 text-center md:items-start md:text-left">
+          <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible">
+            <Logo className="h-14 md:h-16" />
+          </motion.div>
+          <motion.p custom={1} variants={fadeUp} initial="hidden" animate="visible"
+            className="font-display text-xs uppercase tracking-[0.4em] text-primary md:text-sm">
+            Coca-Cola Apresenta
+          </motion.p>
+          <motion.h1 custom={2} variants={fadeUp} initial="hidden" animate="visible"
+            className="font-display text-3xl font-bold uppercase leading-tight tracking-wider text-foreground md:text-6xl">
+            Coca-Cola Champions<br />
+            <span className="text-primary">Experience</span>
+          </motion.h1>
+          <motion.div custom={3} variants={fadeUp} initial="hidden" animate="visible">
+            <GoldBar />
+          </motion.div>
+          <motion.h2 custom={3} variants={fadeUp} initial="hidden" animate="visible"
+            className="font-display text-lg font-light uppercase tracking-widest text-accent md:text-2xl">
+            Uma Noite com Cafu
+          </motion.h2>
+          <motion.p custom={4} variants={fadeUp} initial="hidden" animate="visible"
+            className="font-display text-sm font-light uppercase tracking-wider text-foreground/70 md:text-base">
+            Conexão, Inspiração e a Energia de Quem Faz Acontecer
+          </motion.p>
+          <motion.p custom={5} variants={fadeUp} initial="hidden" animate="visible"
+            className="max-w-md font-body text-xs leading-relaxed text-muted-foreground md:text-sm">
+            Uma experiência única que conecta o universo do esporte com aquilo que a Coca-Cola sempre representou: emoção, união, celebração e momentos inesquecíveis.
+          </motion.p>
+        </div>
       </div>
     </div>
   ),
