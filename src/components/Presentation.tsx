@@ -208,7 +208,7 @@ const slides = [
         </div>
         <motion.div custom={2} variants={fadeLeft} initial="hidden" animate="visible"
           className="hidden flex-1 items-center justify-center md:flex">
-          <img src={cafuSpeaker} alt="Cafu" className="max-h-[70%] rounded-lg object-cover shadow-2xl" style={{ boxShadow: "var(--shadow-glow)" }} />
+          <img src={cafuPortrait} alt="Cafu" className="max-h-[70%] rounded-lg object-cover shadow-2xl" style={{ boxShadow: "var(--shadow-glow)" }} />
         </motion.div>
       </div>
     </div>
