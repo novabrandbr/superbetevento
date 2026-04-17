@@ -20,6 +20,10 @@ import cocacolaField from "@/assets/cocacola-field.png";
 import auditorium from "@/assets/auditorium.png";
 import podcastStageNew from "@/assets/podcast-stage-new.png";
 
+// Aliases (replaced versions of older assets used throughout slides)
+const podcastStage = podcastStageNew;
+const cocacolaStand = cocacolaStandNew;
+
 // Confetti animation overlay
 const Confetti = () => {
   const pieces = Array.from({ length: 80 });
@@ -82,11 +86,7 @@ const fadeLeft = {
   }),
 };
 
-const SlideNumber = ({ n, total }: { n: number; total: number }) => (
-  <div className="absolute bottom-6 right-8 font-display text-sm tracking-widest text-muted-foreground">
-    {String(n).padStart(2, "0")} / {String(total).padStart(2, "0")}
-  </div>
-);
+// SlideNumber removed per user request
 
 const RedBar = () => (
   <div className="h-1 w-20 rounded-full bg-primary" />
@@ -877,7 +877,6 @@ const Presentation = () => {
           className="absolute inset-0"
         >
           <SlideComponent />
-          <SlideNumber n={current + 1} total={total} />
         </motion.div>
       </AnimatePresence>
 
