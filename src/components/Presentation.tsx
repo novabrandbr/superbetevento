@@ -9,10 +9,56 @@ import venueExterior from "@/assets/venue-exterior.png";
 import venueInterior from "@/assets/venue-interior.png";
 import cocacolaLogo from "@/assets/cocacola-logo.png";
 import kallaLogo from "@/assets/kalla-logo.png";
-import cocacolaStand from "@/assets/cocacola-stand.png";
 import cocacolaShopping from "@/assets/cocacola-shopping.png";
 import foodDonation from "@/assets/food-donation.png";
-import podcastStage from "@/assets/podcast-stage.png";
+import cafuTrophyRaised from "@/assets/cafu-trophy-raised.png";
+import cafuCelebration from "@/assets/cafu-celebration.png";
+import cafuPortrait from "@/assets/cafu-portrait.png";
+import cafuSuit from "@/assets/cafu-suit.png";
+import cocacolaStandNew from "@/assets/cocacola-stand-new.png";
+import cocacolaField from "@/assets/cocacola-field.png";
+import auditorium from "@/assets/auditorium.png";
+import podcastStageNew from "@/assets/podcast-stage-new.png";
+
+// Confetti animation overlay
+const Confetti = () => {
+  const pieces = Array.from({ length: 80 });
+  const colors = ["hsl(var(--primary))", "hsl(var(--accent))", "hsl(var(--brand-gold))", "#ffffff", "hsl(var(--brand-green))"];
+  return (
+    <div className="pointer-events-none absolute inset-0 z-20 overflow-hidden">
+      {pieces.map((_, i) => {
+        const left = Math.random() * 100;
+        const delay = Math.random() * 5;
+        const duration = 4 + Math.random() * 4;
+        const size = 6 + Math.random() * 8;
+        const color = colors[i % colors.length];
+        const rotate = Math.random() * 360;
+        return (
+          <motion.span
+            key={i}
+            initial={{ y: -50, x: 0, rotate: 0, opacity: 0 }}
+            animate={{
+              y: ["-10vh", "110vh"],
+              x: [0, Math.random() * 60 - 30, Math.random() * 60 - 30],
+              rotate: [0, rotate, rotate * 2],
+              opacity: [0, 1, 1, 0.8],
+            }}
+            transition={{ duration, delay, repeat: Infinity, ease: "linear" }}
+            style={{
+              position: "absolute",
+              left: `${left}%`,
+              top: 0,
+              width: size,
+              height: size * 0.4,
+              background: color,
+              borderRadius: 2,
+            }}
+          />
+        );
+      })}
+    </div>
+  );
+};
 
 const slideVariants = {
   enter: { opacity: 0, scale: 0.96 },
