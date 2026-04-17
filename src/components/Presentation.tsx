@@ -237,8 +237,8 @@ const slides = [
           <span className="font-display text-sm uppercase tracking-widest text-muted-foreground">participantes presenciais</span>
         </motion.div>
         <motion.div custom={5} variants={fadeUp} initial="hidden" animate="visible" className="flex gap-4">
-          <img src={venueExterior} alt="Venue" className="h-32 rounded-lg object-cover shadow-lg md:h-48" />
-          <img src={venueInterior} alt="Interior" className="h-32 rounded-lg object-cover shadow-lg md:h-48" />
+          <img src={venueExterior} alt="Centro de Convenções" className="h-32 rounded-lg object-cover shadow-lg md:h-48" />
+          <img src={auditorium} alt="Auditório" className="h-32 rounded-lg object-cover shadow-lg md:h-48" />
         </motion.div>
       </div>
     </div>
