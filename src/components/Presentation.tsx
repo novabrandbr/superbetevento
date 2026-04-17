@@ -572,6 +572,9 @@ const slides = [
           "Produtos personalizados",
           "Experiências especiais com o público",
         ]} />
+        <motion.div custom={6} variants={fadeUp} initial="hidden" animate="visible">
+          <img src={cocacolaField} alt="Ativação Coca-Cola Rollerball" className="mt-4 h-40 rounded-lg object-cover shadow-xl md:h-52" />
+        </motion.div>
       </div>
     </div>
   ),
